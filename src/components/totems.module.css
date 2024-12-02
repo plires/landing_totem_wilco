@@ -1,0 +1,167 @@
+.hidden {
+  display: none !important;
+}
+
+.show {
+  display: inline-block;
+}
+
+.totemDesktop {
+  margin-bottom: 30px;
+}
+
+.totemDesktop .content_data {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  order: 0 !important;
+}
+
+.colLeft,
+.colRight {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.colLeft .content_data {
+  text-align: right;
+}
+
+.content_data {
+  text-align: left;
+}
+
+.totemDesktop article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+  border-bottom: solid 1px black;
+  padding-bottom: 15px;
+}
+
+.totemDesktop article h3 {
+  font-size: 0.85rem;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.totemDesktop article p {
+  font-size: 0.85rem;
+  margin-bottom: 0;
+}
+
+.totemDesktop article img {
+  max-width: 45px;
+}
+
+.colLeft img {
+  margin-left: 10px;
+}
+
+.colRight img {
+  margin-right: 10px;
+}
+
+.contentImgTotem {
+  text-align: center;
+}
+
+.imgPrincipal {
+  max-width: 225px !important;
+}
+/* MEDIA QUERIES */
+
+@media (min-width: 576px) {
+}
+
+@media (min-width: 768px) {
+  .totem {
+    margin-bottom: 60px;
+  }
+
+  .contentHeader {
+    margin-bottom: 30px;
+  }
+
+  .totemMobile {
+    display: none;
+  }
+
+  .content_data {
+    min-width: 161px;
+  }
+}
+
+@media (min-width: 992px) {
+  .totemDesktop article {
+    margin-bottom: 0;
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+
+  .content_data {
+    min-width: 241px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .totemDesktop article {
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+  }
+
+  .content_data {
+    min-width: 281px;
+  }
+
+  .content_data h3 {
+    font-size: 1.125rem !important;
+  }
+
+  .content_data h3 br {
+    display: none;
+  }
+
+  .totemDesktop article p {
+    font-size: 1rem;
+  }
+
+  .totemDesktop article img {
+    max-width: 60px;
+  }
+
+  .colLeft img {
+    margin-left: 15px;
+  }
+
+  .colRight img {
+    margin-right: 15px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .contentHeader {
+    margin-bottom: 60px;
+  }
+
+  .contentHeader p {
+    font-size: 1.125rem;
+  }
+
+  .content_data {
+    min-width: 341px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .content_data h3 {
+    font-size: 1.25rem !important;
+  }
+
+  .totemDesktop article p {
+    font-size: 1.125rem;
+  }
+}

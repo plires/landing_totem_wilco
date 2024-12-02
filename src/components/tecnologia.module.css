@@ -1,0 +1,39 @@
+.tecnologia {
+  margin-bottom: 30px;
+}
+
+.tecnologia h2 {
+  margin-bottom: 40px;
+}
+
+.imgPrincipal {
+  margin-bottom: 30px;
+}
+
+/* MEDIA QUERIES */
+@media (min-width: 576px) {
+}
+
+@media (min-width: 768px) {
+  .tecnologia {
+    margin-bottom: 60px;
+  }
+
+  .imgPrincipal {
+    margin-bottom: 0;
+    object-fit: cover;
+    height: 100% !important;
+  }
+}
+
+@media (min-width: 992px) {
+}
+
+@media (min-width: 1200px) {
+}
+
+@media (min-width: 1400px) {
+}
+
+@media (min-width: 1600px) {
+}

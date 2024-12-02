@@ -1,0 +1,19 @@
+{
+  "technologicalFeatures": [
+    {
+      "id": 1,
+      "title": "CÁMARAS",
+      "description": "En el formato estándar, se provee 4 cámaras (una es la del propio tótem) que son ubicadas de acuerdo a la necesidad del lugar, luego de realizar un relevamiento del sitio."
+    },
+    {
+      "id": 2,
+      "title": "VIDEOGRABADORA",
+      "description": "Todo lo registrado por las cámaras se graba en un disco de almacenamiento por un tiempo aproximado de 30 días."
+    },
+    {
+      "id": 3,
+      "title": "APP",
+      "description": "Servicio de asistencia remota monitoreada por departamento con los siguientes botones de pánico: ambulancia, bomberos, policía y asistencia de ingreso. Disponible para Android e Iphone."
+    }
+  ]
+}

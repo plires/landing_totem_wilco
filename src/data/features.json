@@ -1,0 +1,37 @@
+{
+  "features": [
+    {
+      "id": 1,
+      "column": "left",
+      "title": "ALARMAS DE <br />SEGURIDAD",
+      "description": "Aviso a las fuerzas policiales, bomberos o sanidad.",
+      "img": "alarma.svg",
+      "alt": "icon alarma wilco"
+    },
+    {
+      "id": 2,
+      "column": "left",
+      "title": "MONITOREO  <br />ONLINE",
+      "description": "Monitoreo permanente por el personal especializado en seguridad, capacitado para resolver cualquier tipo de solución. El totem posee micrófono y parlante para interactuar en tiempo real con nuestro vigilador/ operador virtual.",
+      "img": "monitoreo.svg",
+      "alt": "icon monitoreo wilco"
+    },
+    {
+      "id": 3,
+      "column": "right",
+      "title": "CÁMARA DE <br />MONITOREO 24 HS",
+      "description": "Cuenta con 3 cámaras adicionales de seguimiento en lugares estratégicos de su edificio.",
+      "img": "camara.svg",
+      "alt": "icon camara wilco"
+    },
+
+    {
+      "id": 5,
+      "column": "right",
+      "title": "CAPACIDAD DE <br />GRABACIÓN 30 DÍAS",
+      "description": "Tecnología de almacenamiento de imágenes y videos, garantizamos un registro completo y fiable de eventos. Ideal para respaldo de seguridad prolongado.",
+      "img": "grabacion.svg",
+      "alt": "icon grabacion wilco"
+    }
+  ]
+}

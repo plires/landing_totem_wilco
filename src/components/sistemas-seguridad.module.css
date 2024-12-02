@@ -1,0 +1,155 @@
+.sistemaSeguridad {
+  background: var(--third-color);
+  padding-top: 60px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.sistemaSeguridad h3 {
+  font-style: italic;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.sistemaSeguridad h3 br {
+  display: none;
+}
+
+.sistemaSeguridad ul {
+  margin-bottom: 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.firstUl {
+  margin-top: 30px;
+}
+
+.lastUl {
+  margin-bottom: 30px !important;
+}
+
+.sistemaSeguridad ul li {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.contentImg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contentButton {
+  margin-bottom: 30px;
+}
+
+.buttonEdicificioSeguro {
+  background: var(--primary-color) !important;
+  color: white !important;
+  border: solid 1px var(--primary-color) !important;
+}
+
+.buttonEdicificioSeguro:hover {
+  color: var(--primary-color) !important;
+  background: white !important;
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 576px) {
+}
+
+@media (min-width: 768px) {
+  .sistemaSeguridad {
+    margin-bottom: 0;
+  }
+
+  .sistemaSeguridad ul {
+    margin: 0;
+    text-align: left;
+    justify-content: flex-start;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .contentUl {
+    padding-bottom: 30px;
+  }
+
+  .contentUl,
+  .contentUl ul {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .contentUl ul li:last-child {
+    margin-bottom: 0;
+  }
+
+  .contentUl ul li {
+    min-height: 48px;
+  }
+
+  .lastUl {
+    margin-bottom: 0 !important;
+  }
+
+  .contentImg {
+    align-items: flex-end;
+  }
+}
+
+@media (min-width: 992px) {
+  .contentUl {
+    padding-bottom: 60px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .sistemaSeguridad h3 {
+    font-size: 1.25rem;
+    margin-bottom: 30px;
+  }
+
+  .sistemaSeguridad p {
+    font-size: 1.125rem;
+  }
+
+  .contentData {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .sistemaSeguridad ul li {
+    margin-bottom: 20px;
+    font-size: 1.125rem;
+  }
+
+  .buttonEdicificioSeguro {
+    font-size: 1.25rem !important;
+  }
+}
+
+@media (min-width: 1300px) {
+}
+
+@media (min-width: 1400px) {
+}
+
+@media (min-width: 1500px) {
+}
+
+@media (min-width: 1600px) {
+}

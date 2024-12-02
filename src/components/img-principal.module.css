@@ -1,0 +1,127 @@
+.imgPrincipal {
+  margin-bottom: 60px;
+}
+
+.contentData,
+.contentForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.imgPrincipal h1 {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.imgPrincipal h1 span {
+  padding: 8px 16px;
+  display: inline-block;
+  margin-bottom: 5px;
+  font-size: 2.15rem;
+}
+
+.contentData {
+  background: url(./../assets/img/header-principal.webp);
+  background-position: 50% 50%;
+  background-size: cover;
+  padding-top: 100px;
+  padding-bottom: 150px;
+}
+
+.contentForm {
+  margin-top: -120px !important;
+}
+
+/* MEDIA QUERIES */
+@media (min-width: 576px) {
+  .container {
+    max-width: 100% !important;
+  }
+
+  .imgPrincipal h1 {
+    font-size: 1.75rem;
+    margin-bottom: 60px;
+  }
+
+  .imgPrincipal h1 span {
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px !important;
+  }
+
+  .imgPrincipal {
+    background: url(./../assets/img/header-principal.webp);
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+
+  .contentData {
+    background: none;
+    background-position: initial;
+    background-size: initial;
+    padding: 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .contentForm {
+    margin: 0 !important;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .imgPrincipal h1 {
+    font-size: 1.6rem;
+    margin-bottom: 0;
+  }
+
+  .imgPrincipal h1 span {
+    font-size: 2.2rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px !important;
+  }
+
+  .imgPrincipal h1 {
+    font-size: 2.25rem;
+    padding-top: 60px;
+  }
+
+  .imgPrincipal h1 span {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px !important;
+  }
+
+  .imgPrincipal h1 {
+    font-size: 2.5rem;
+  }
+
+  .imgPrincipal h1 span {
+    font-size: 3.5rem;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px !important;
+  }
+}
+
+@media (min-width: 1600px) {
+}

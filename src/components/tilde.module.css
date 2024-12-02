@@ -1,0 +1,30 @@
+.tilde {
+  max-width: 32px !important;
+  margin-right: 5px;
+}
+
+/* MEDIA QUERIES */
+@media (min-width: 576px) {
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 992px) {
+}
+
+@media (min-width: 1200px) {
+}
+
+@media (min-width: 1400px) {
+  .tilde {
+    max-width: 45px !important;
+    margin-right: 10px;
+  }
+}
+
+@media (min-width: 1600px) {
+}
+
+@media (min-width: 1800px) {
+}

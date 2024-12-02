@@ -1,0 +1,92 @@
+.contentImg {
+  background: url('@/assets/img/pareja.webp');
+  background-size: cover;
+  background-position: 80% 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.imgApp {
+  max-width: 200px !important;
+}
+
+.contentData {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttonDescargar {
+  background: var(--primary-color) !important;
+  color: white !important;
+  border: solid 1px var(--primary-color) !important;
+}
+
+.buttonDescargar:hover {
+  color: var(--primary-color) !important;
+  background: white !important;
+}
+
+/* MEDIA QUERIES */
+@media (min-width: 576px) {
+}
+
+@media (min-width: 768px) {
+  .contentImg {
+    margin-bottom: 0;
+  }
+
+  .contentData p {
+    max-width: 300px;
+  }
+}
+
+@media (min-width: 992px) {
+  .imgApp {
+    max-width: 250px !important;
+  }
+
+  .contentData p {
+    max-width: 450px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .imgApp {
+    max-width: 300px !important;
+  }
+
+  .contentData p {
+    max-width: 500px;
+    font-size: 1.125rem;
+    margin-bottom: 30px;
+  }
+
+  .buttonDescargar {
+    font-size: 1.25rem !important;
+  }
+}
+
+@media (min-width: 1400px) {
+}
+
+@media (min-width: 1600px) {
+  .imgApp {
+    max-width: 350px !important;
+  }
+
+  .contentData h2 {
+    margin-bottom: 30px;
+  }
+
+  .contentData p {
+    margin-bottom: 40px;
+  }
+}
+
+@media (min-width: 1800px) {
+}

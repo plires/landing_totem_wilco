@@ -1,0 +1,34 @@
+{
+  "titlesSystem": [
+    {
+      "id": 1,
+      "column": "left",
+      "title": "CAMARAS DE SEGURIDAD"
+    },
+    {
+      "id": 2,
+      "column": "left",
+      "title": "APPS DE SEGURIDAD"
+    },
+    {
+      "id": 3,
+      "column": "left",
+      "title": "CONTROL DE ACCESOS"
+    },
+    {
+      "id": 4,
+      "column": "right",
+      "title": "CERCO ELÉCTRICO"
+    },
+    {
+      "id": 5,
+      "column": "right",
+      "title": "ALARMAS"
+    },
+    {
+      "id": 6,
+      "column": "right",
+      "title": "MONITOREO 24 HS"
+    }
+  ]
+}

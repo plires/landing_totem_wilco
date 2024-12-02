@@ -1,0 +1,45 @@
+.lastCta {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  text-align: center;
+}
+
+.lastCta h2 {
+  margin-bottom: 30px;
+}
+
+.button {
+  background: var(--primary-color) !important;
+  color: white !important;
+  font-size: 1.25rem !important;
+  border: solid 1px var(--primary-color) !important;
+}
+
+.button:hover {
+  color: var(--primary-color) !important;
+  background: white !important;
+}
+/* MEDIA QUERIES */
+@media (min-width: 576px) {
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 992px) {
+}
+
+@media (min-width: 1200px) {
+  .button {
+    font-size: 1.5rem !important;
+  }
+}
+
+@media (min-width: 1400px) {
+}
+
+@media (min-width: 1600px) {
+}
+
+@media (min-width: 1800px) {
+}

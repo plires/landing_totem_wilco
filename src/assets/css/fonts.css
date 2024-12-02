@@ -1,0 +1,29 @@
+@font-face {
+  font-family: 'DIN';
+  src:
+    url('./../fonts/DIN-Bold.woff2') format('woff2'),
+    url('./../fonts/DIN-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DIN';
+  src:
+    url('./../fonts/DIN-Regular.woff2') format('woff2'),
+    url('./../fonts/DIN-Regular.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DIN Next LT Pro';
+  src:
+    url('./../fonts/DINNextLTPro-MediumItalic.woff2') format('woff2'),
+    url('./../fonts/DINNextLTPro-MediumItalic.woff') format('woff');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
