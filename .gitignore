@@ -29,4 +29,5 @@ dist-ssr
 
 # custom
 *.sql
+!docker/mysql/initdb/*.sql
 .env

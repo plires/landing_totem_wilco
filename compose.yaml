@@ -1,0 +1,62 @@
+name: wilco
+
+# Local development stack for the PHP contact endpoint (php/process.php).
+# The React frontend runs on the host with `npm run dev` (Vite, port 5173).
+services:
+  php:
+    build: ./docker/php
+    ports:
+      # Apache listens on 8080 inside the container too, so VITE_ROOT
+      # (http://localhost:8080/) resolves both from the host and from PHP,
+      # which fetches the email templates over HTTP.
+      - "8080:8080"
+    volumes:
+      - ./:/var/www/html
+    environment:
+      # Real environment variables take precedence over .env
+      # (Dotenv::createImmutable never overwrites them).
+      VITE_ENVIRONMENT: local
+      VITE_ROOT: http://localhost:8080/
+      VITE_DSN: mysql:host=mysql;port=3306;dbname=lc_wilco;charset=utf8mb4
+      VITE_DB_USER: homestead
+      VITE_DB_PASS: secret
+      # Local mode delivers through sendmail (msmtp -> Mailpit). SMTP values
+      # point at Mailpit as well so no real server is ever reached.
+      VITE_SMTP: mailpit
+      VITE_EMAIL_PORT: "1025"
+      VITE_EMAIL_CLIENT: ""
+      VITE_PASSWORD: ""
+    depends_on:
+      mysql:
+        condition: service_healthy
+      mailpit:
+        condition: service_started
+
+  mysql:
+    image: mysql:8.4
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: lc_wilco
+      MYSQL_USER: homestead
+      MYSQL_PASSWORD: secret
+    volumes:
+      - mysql-data:/var/lib/mysql
+      - ./docker/mysql/initdb:/docker-entrypoint-initdb.d:ro
+    healthcheck:
+      # TCP ping: the temporary server used during initialization has no
+      # TCP listener, so the service only turns healthy once init finished.
+      test: ["CMD", "mysqladmin", "ping", "-h", "127.0.0.1", "-uroot", "-proot"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+
+  mailpit:
+    image: axllent/mailpit:latest
+    ports:
+      - "8025:8025" # Web UI
+      - "1025:1025" # SMTP
+
+volumes:
+  mysql-data:

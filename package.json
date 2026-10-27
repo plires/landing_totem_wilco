@@ -1,10 +1,11 @@
 {
-  "name": "central-norte",
+  "name": "wilco",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite --host --port 5173",
+    "dev:docker": "VITE_ENVIRONMENT=local VITE_ROOT=http://localhost:8080/ vite --host --port 5173",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
